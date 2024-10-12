@@ -652,6 +652,7 @@ service-highlight{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 150px;
 }
 
 .client_section .box .client_id .img-box {
@@ -679,6 +680,7 @@ service-highlight{
       -ms-flex: 1;
           flex: 1;
   padding-right: 25px;
+  min-height: 150px;
 }
 
 .client_section .box .client_id .client_detail .client_info h6 {
@@ -803,13 +805,12 @@ service-highlight{
 }
 
 .info_section .social-box .box {
-  background-color: #ffffff;
   padding: 5px 15px;
 }
 
 .info_section a {
   margin: 0 5px;
-  color: #0355cc;
+  color: #ff8a1d;
 }
 
 .info_section a i {
@@ -847,19 +848,19 @@ service-highlight{
   background-position: center;
   text-align: center;
   line-height: 80px;
-  background-color: #0355cc;
+  background-color: #ffffff;
   color: #ffffff;
 }
 
 .info_items .item .img-box i {
   font-size: 24px;
+  color: #0355cc;
 }
 
 .info_items .item p {
   margin-top: 25px;
   color: #fff;
   margin-bottom: 0;
-  background-color: #0a0f43;
 }
 
 .info_items .item:hover .img-box {
