@@ -121,7 +121,7 @@
   </div>
 
   <!-- feature section -->
-  <section class="feature_section">
+  <!-- <section class="feature_section">
     <div class="container">
       <div class="feature_container">
         <div class="box">
@@ -166,7 +166,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- end feature section -->
 
@@ -329,7 +329,8 @@
               </div>
               <div class="client_text">
                 <p>
-                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                  Mending pake ini deh sekarang. Daripada capek dorong motor ke bengkel yang gatau ke mana, masih buka atau udah tutup.
+                  Pokoknya spongebob warnanya kuning.    
                 </p>
               </div>
             </div>
@@ -356,7 +357,7 @@
               </div>
               <div class="client_text">
                 <p>
-                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                  Rekomen lah, saya awalnya tau dari temen saya. Ternyata bagus yaa...
                 </p>
               </div>
             </div>
@@ -383,7 +384,8 @@
               </div>
               <div class="client_text">
                 <p>
-                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                 Dengan adanya fix and call ini, kehidupan saya menjadi lebih tenang. Saya tidak perlu untuk kahwatir bila perjalanan
+                 jauh bersama keluarga. Hal sepele hingga hal yang tidak bisa dilakukan semua montir bisa dilakukan oleh mitra fix and call. 
                 </p>
               </div>
             </div>
@@ -410,7 +412,34 @@
               </div>
               <div class="client_text">
                 <p>
-                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                  Mobil saya diperbaiki hanya dalam berberapa menit. Jarak antara bengkel mitra dan posisi saya sangat dekat sehingga mekanik 
+                  dapat datang langsung dengan cepat. Pokoknya rekomen gess bengkel di sini.    
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/client-1.jpg" alt="">
+                </div>
+                <div class="client_detail">
+                  <div class="client_info">
+                    <h6>
+                      Danu Putra Dwi Bijaksana
+                    </h6>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client_text">
+                <p>
+                  Wow pokoknya bagus, gak pernah kapok deh make jasa website ini    
                 </p>
               </div>
             </div>
@@ -478,7 +507,7 @@
             const formData = new FormData(form);
             const object = Object.fromEntries(formData);
             const json = JSON.stringify(object);
-            result.innerHTML = "Please wait...";
+            result.innerHTML = "Mohon tunggu. . .";
   
             fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
@@ -491,13 +520,13 @@
             .then(async (response) => {
                 let json = await response.json();
                 if (response.status == 200) {
-                    result.innerHTML = "Form submitted successfully!";
+                    result.innerHTML = "Pesan telah terikim";
                 } else {
                     result.innerHTML = json.message;
                 }
             })
             .catch(error => {
-                result.innerHTML = "Something went wrong!";
+                result.innerHTML = "Ada kesalahan!";
                 console.error(error);
             })
             .then(() => {
@@ -565,7 +594,7 @@
                       <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
                     <p>
-                      Lorem Ipsum is simply dummy text
+                      Jl. Halimun Raya, Jakarta
                     </p>
                   </div>
                 </a>
@@ -577,7 +606,7 @@
                       <i class="fa fa-phone" aria-hidden="true"></i>
                     </div>
                     <p>
-                      +02 1234567890
+                      +62 14045
                     </p>
                   </div>
                 </a>
@@ -589,7 +618,7 @@
                       <i class="fa fa-envelope" aria-hidden="true"></i>
                     </div>
                     <p>
-                      demo@gmail.com
+                      fixandcall@service.com
                     </p>
                   </div>
                 </a>
@@ -604,16 +633,16 @@
         Follow Us
       </h4>
       <div class="box">
-        <a href="">
+        <a href="https://www.facebook.com/">
           <i class="fa fa-facebook" aria-hidden="true"></i>
         </a>
-        <a href="">
+        <a href="https://x.com/?lang=en">
           <i class="fa fa-twitter" aria-hidden="true"></i>
         </a>
-        <a href="">
+        <a href="https://www.youtube.com/">
           <i class="fa fa-youtube" aria-hidden="true"></i>
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/">
           <i class="fa fa-instagram" aria-hidden="true"></i>
         </a>
       </div>
