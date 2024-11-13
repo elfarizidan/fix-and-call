@@ -12,29 +12,22 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-<!-- Trunsitile CHAPTA CLOUDFLARE -->
+
+  <!-- Cloudflare Turnstile -->
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
   <title>Fix And Call</title>
   <link rel="icon" href="/serviceportable-main/images/logo-title.png" type="image/x-icon">
   <link rel="shortcut icon" href="/serviceportable-main/images/logo-title.png" type="image/x-icon">
 
-  <!-- slider stylesheet -->
+  <!-- Additional Stylesheets -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <!-- font awesome style -->
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-
-  <!-- Map API -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-  <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/f54b366955.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
   <div class="hero_area">
@@ -713,6 +706,15 @@
     </div>
   </footer>
   <!-- footer section -->
+  <form action="/submit" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <!-- Turnstile widget -->
+    <div class="cf-turnstile" data-sitekey="your-site-key-here"></div>
+
+    <button type="submit">Submit</button>
+  </form>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
