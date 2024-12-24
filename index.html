@@ -30,8 +30,43 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://kit.fontawesome.com/f54b366955.js" crossorigin="anonymous"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
+    <div id="turnstile-container" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <!-- Turnstile Widget -->
+    <div class="cf-turnstile" 
+         data-sitekey="your-site-key" 
+         data-callback="onSuccess" 
+         data-error-callback="onError"
+         data-expired-callback="onExpired"></div>
+  </div>
+
+  <script>
+    // Callback when Turnstile is successfully completed
+    function onSuccess(token) {
+      // Hide Turnstile and show success message or redirect
+      document.getElementById('turnstile-container').style.display = 'none';
+      
+      // Example: Load your content dynamically after validation
+      const content = document.createElement('div');
+      content.innerHTML = '<h1>Welcome to the website!</h1>';
+      document.body.appendChild(content);
+
+      // Optional: Send the token to your server for validation
+      // fetch('/validate', { method: 'POST', body: JSON.stringify({ token }) })
+      //   .then(response => response.json())
+      //   .then(data => console.log(data));
+    }
+
+    function onError() {
+      alert("Turnstile failed. Please try again.");
+    }
+
+    function onExpired() {
+      alert("Turnstile token expired. Please refresh.");
+    }
+  </script>
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
